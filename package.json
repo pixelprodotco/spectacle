@@ -2,9 +2,9 @@
   "name": "spectacle",
   "version": "0.0.0",
   "description": "Twitch overlay components for pixelprodotco stream",
-  "main": "index.js",
   "scripts": {
     "test": "jest",
+    "start": "node server/index.js",
     "build:interface": "webpack --progress --colors --mode development --config ./interface/config/webpack.config.js"
   },
   "repository": {
