@@ -4,7 +4,8 @@
   "description": "Twitch overlay components for pixelprodotco stream",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build:interface": "webpack --progress --colors --mode development --config ./interface/config/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,17 @@
   "bugs": {
     "url": "https://github.com/pixelprodotco/spectacle/issues"
   },
-  "homepage": "https://github.com/pixelprodotco/spectacle#readme"
+  "homepage": "https://github.com/pixelprodotco/spectacle#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "emotion": "^9.2.8",
+    "express": "^4.16.3",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0"
+  }
 }
